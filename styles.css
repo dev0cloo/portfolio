@@ -74,13 +74,12 @@ h2 {
 
 .card:hover {
   box-shadow: 2px 3px 15px rgba(77, 38, 75, 0.904);
-  background-image: linear-gradient(
-    300deg,
-    #e0a16d 0%,
-    #a331a75e 30%,
-    #ca3190 66%,
-    #000000 100%
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(255, 126, 94, 0.932) 17.8%,
+    rgba(196, 2, 255, 0.795) 100.2%
   );
+  
   opacity: 1;
   color: hsl(45, 13%, 13%);
   text-shadow: 10px 10px 10px rgb(20, 23, 37);
