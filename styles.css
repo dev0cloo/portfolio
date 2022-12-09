@@ -26,7 +26,7 @@ body {
   border-bottom: 1px solid #0d204b;
   border-radius: 4px;
   box-shadow: 1px 2px 5px rgb(67, 50, 68);
-  transition: all .5s .2s ease-in-out;
+  transition: all .5s ease-in-out;
 
 }
 
@@ -44,7 +44,7 @@ h2 {
 .intro{
     font-size: 20px;
 }
-/* TODO: show current progress on flex expansion */
+/* TODO: show current % progress on flex expansion */
 .content {
   flex: 1;
   display: flex;
@@ -61,8 +61,14 @@ h2 {
     align-items: center;
     flex-direction: column;
     padding: 10px;
-    border: 1px solid rgb(102, 29, 98);
-    transition: all .5s .2s ease-in-out;
+    box-shadow: 1px -2px 10px ;
+    border: 1px solid #433244;
+    transition: all .5s ease-in-out;
+}
+
+div.socials:hover{
+    box-shadow: 10px -3px 15px #433244;
+
 }
 
 .socials:hover, .heading:hover{
@@ -70,7 +76,7 @@ h2 {
     text-decoration: underline;
     flex: 1;
     padding: 10px;
-    box-shadow: 2px 3px 5px rgb(67, 50, 68);
+    box-shadow: 4px 3px 5px #433244;
     border-bottom: none;
     
 }
@@ -85,10 +91,10 @@ h2 {
   height: 350px;
   text-shadow: 5px 5px 10px rgb(51, 20, 63);
   opacity: 0.7;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(36, 35, 35);
   box-shadow: -2px 2px 10px #4d264be7;
   border-radius: 4px;
-  transition: all 1s ease-in-out 0.2s, color 1s 0s ease-in-out;
+  transition: all .5s ease-in-out, color .1s 0s ease-in-out;
 }
 
 .card:hover {
@@ -133,3 +139,4 @@ a {
   text-decoration: none;
   color: rgba(48, 58, 63, 0.925);
 }
+
