@@ -111,15 +111,13 @@ div.socials:hover{
 }
 
 /* increases box size on hover */
-.stack:hover,
+.skills:hover:hover,
 .projects:hover,
 .certification:hover {
   flex: 2 1 0;
 }
 
-/* div {
-    border: 1px solid;
-} */
+
 
 p {
   margin: 1px;
