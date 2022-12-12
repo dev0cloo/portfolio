@@ -1,8 +1,66 @@
+.progressbar {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  margin: 1em;
+  transform: rotate(-90deg);
+}
+
+.progressbar__svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.progressbar__svg-circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke-width: 10;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  stroke: hsl(0deg, 0%, 100%);
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+
+.progressbar__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0.25em 0.5em;
+  color: hsl(0deg, 0%, 100%);
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.shadow-html {
+  filter: drop-shadow(0 0 5px hsl(15deg, 100%, 60%));
+}
+
+.circle-html {
+  -webkit-animation: anim_circle-html 2s ease-in-out 1.15s forwards;
+          animation: anim_circle-html 2s ease-in-out 1.15s forwards;
+}
+
+@-webkit-keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: 22;
+  }
+}
+
+@keyframes anim_circle-html {
+  to {
+    stroke-dashoffset: 22;
+  }
+}
 * {
   box-sizing: border-box;
 }
 
-html {
+body {
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -10,8 +68,8 @@ html {
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 126, 94, 0.932) 17.8%, rgba(196, 2, 255, 0.795) 100.2%);
 }
 
-body {
-  margin-bottom: 10px;
+.main {
+  margin: 10px;
   flex: 0.9 1 auto;
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(255, 126, 94, 0.932) 17.8%, rgba(196, 2, 255, 0.795) 100.2%);
   border-radius: 10px;
@@ -20,8 +78,31 @@ body {
   flex-direction: column;
   justify-content: space-between;
   color: #0d204b;
+  -webkit-animation: mainAnim 1s ease 0s 1 normal both;
+          animation: mainAnim 1s ease 0s 1 normal both;
 }
 
+@-webkit-keyframes mainAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes mainAnim {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .heading {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -52,8 +133,31 @@ h2 {
   flex-wrap: wrap;
   gap: 32px;
   align-items: center;
+  -webkit-animation: contentAnim 1s ease 0.15s 1 normal both;
+          animation: contentAnim 1s ease 0.15s 1 normal both;
 }
 
+@-webkit-keyframes contentAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes contentAnim {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .socials {
   display: flex;
   justify-content: center;
@@ -63,19 +167,6 @@ h2 {
   box-shadow: 5px 5px 18px rgba(18, 17, 18, 0.3803921569);
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
-}
-
-div.socials:hover {
-  box-shadow: 10px -3px 15px #433244;
-}
-
-.socials:hover, .heading:hover {
-  font-size: large;
-  text-decoration: underline;
-  flex: 1;
-  padding: 10px;
-  box-shadow: 4px 3px 5px rgba(27, 26, 27, 0.5764705882);
-  border-bottom: none;
 }
 
 .card {
