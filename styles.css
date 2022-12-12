@@ -111,7 +111,7 @@ div.socials:hover{
 }
 
 /* increases box size on hover */
-.skills:hover:hover,
+.skills:hover,
 .projects:hover,
 .certification:hover {
   flex: 2 1 0;
