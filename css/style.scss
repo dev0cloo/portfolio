@@ -44,7 +44,7 @@ $porcent-html: 95;
   filter: drop-shadow(0 0 5px $color-html);
 }
 
-.circle-html{
+.circle-html {
   animation: anim_circle-html 2s ease-in-out 1.15s forwards;
 }
 
@@ -58,7 +58,11 @@ $porcent-html: 95;
   box-sizing: border-box;
 }
 
-body {
+body{
+  margin: 0 auto;
+}
+
+main {
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -68,11 +72,11 @@ body {
     circle farthest-corner at 10% 20%,
     rgba(255, 126, 94, 0.932) 17.8%,
     rgba(196, 2, 255, 0.795) 100.2%
-  );
-  
+    );
+    animation: sAnim 1s ease 1s 1 normal both;
 }
 
-.main {
+.root {
   margin: 10px;
   flex: 0.9 1 auto;
   background-image: radial-gradient(
@@ -89,23 +93,38 @@ body {
   animation: mainAnim 1s ease 0s 1 normal both;
 }
 @keyframes mainAnim {
-	0% {
-		opacity: 0;
-		transform: translateX(-50px);
-	}
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-	100% {
-		opacity: 1;
-		transform: translateX(0);
-	}
+@keyframes sAnim {
+  0% {
+    filter:grayscale(50%);
+    
+  }
+  
+  50%{
+    filter: grayscale(25%);
+  }
+
+  100% {
+    filter: grayscale(0%);
+  }
 }
 
 .heading {
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-    /* padding: 0px; */
-    box-shadow: 6px 3px 9px rgb(28 26 28 / 18%);
-    transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* padding: 0px; */
+  box-shadow: 6px 3px 9px rgb(28 26 28 / 18%);
+  transition: all 0.3s ease-in-out;
 }
 
 h1 {
@@ -113,11 +132,11 @@ h1 {
 }
 h1,
 h2 {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .intro {
-    font-size: 20px;
+  font-size: 20px;
 }
 /* TODO: show current % progress on flex expansion */
 .content {
@@ -128,19 +147,19 @@ h2 {
   flex-wrap: wrap;
   gap: 32px;
   align-items: center;
-  animation: contentAnim 1s ease 0.15s 1 normal both;
+  animation: contentAnim 1s ease 0.5s 1 normal both;
 }
 
 @keyframes contentAnim {
-    0% {
-        opacity: 0;
-        transform: scale(0.6);
-    }
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
 
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .socials {
   display: flex;
