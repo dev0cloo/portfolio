@@ -73,7 +73,7 @@ main {
     rgba(255, 126, 94, 0.932) 17.8%,
     rgba(196, 2, 255, 0.795) 100.2%
     );
-    animation: sAnim 1s ease 1s 1 normal both;
+    
 }
 
 .root {
@@ -104,20 +104,6 @@ main {
   }
 }
 
-@keyframes sAnim {
-  0% {
-    filter:grayscale(50%);
-    
-  }
-  
-  50%{
-    filter: grayscale(25%);
-  }
-
-  100% {
-    filter: grayscale(0%);
-  }
-}
 
 .heading {
   text-align: center;
