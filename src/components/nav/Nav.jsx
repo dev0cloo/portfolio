@@ -1,31 +1,32 @@
 import React from "react";
 import "./Nav.css";
-import { AiOutlineHome, AiOutlineProject } from "react-icons/ai";
+import { AiOutlineProject } from "react-icons/ai";
 import { IoSchoolOutline } from "react-icons/io5";
-import { GrContact, GrProjects } from "react-icons/gr";
+import { RiContactsLine, RiStackLine } from "react-icons/ri";
 import { FiSettings } from "react-icons/fi";
+import {BiMessage} from 'react-icons/bi'
 
 const Nav = () => {
   return (
     <nav>
-      <ul>
+      
         <a href="#home">
-          <AiOutlineHome />
+          <RiContactsLine />
         </a>
-        <a href="#about">
+        <a href="#experience">
           <IoSchoolOutline />
         </a>
-        <a href="">
-          <AiOutlineProject />
-        </a>
         <a href="#portfolio">
-          <GrProjects />
+          <RiStackLine />
+        </a>
+        <a href="#services">
+          <AiOutlineProject />  
         </a>
         <a href="#contact">
-          <GrContact />
+        <BiMessage />
         </a>
         <a href="#"><FiSettings/></a>
-      </ul>
+      
     </nav>
   );
 };
