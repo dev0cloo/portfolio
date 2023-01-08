@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* =================== GLOBAL VARIABLES =================== */
 :root {
   /* background color */
   --bg-color: #1f1f38;
@@ -21,7 +22,8 @@
   --container-width-sm: 90%;
 }
 
-/* root properties */
+
+/* Global properties */
 *{
   box-sizing: border-box;
   margin: 0;
@@ -87,6 +89,7 @@ section > h2{
   color:var(--color-light);
 }
 
+/* Link properties */
 a{
   color: var(--color-primary);
   transition: var(--transition-);
@@ -96,6 +99,7 @@ a:hover{
   color: var(--color-white);
 }
 
+/* button properties */
 .btn{
   width:max-content;
   display: inline-block;
@@ -126,7 +130,7 @@ img {
 }
 
 
-/* *************** MEDIA QUERIES ************ */
+/* ************************* MEDIA QUERIES ********************** */
 
 /* ************* MEDIUM DEVICES **************** */
 @media screen and (max-width:1024px){
