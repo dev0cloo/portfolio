@@ -47,7 +47,7 @@ const About = () => {
               and a passion for creating innovative web solutions. With a strong
               foundation in front-end and back-end technologies and experience
               working with smart contracts on Ethereum and Solidity projects,
-              I'm always eager to push the boundaries of what's possible.about
+              I'm always eager to push the boundaries of what's possible.
             </p>
           </div>
           <Talk/>
