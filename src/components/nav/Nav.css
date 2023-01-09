@@ -1,7 +1,6 @@
 nav{
     background: var(--bg-color-gradient-nav);
     width:max-content;
-    display: block;
     padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
@@ -27,4 +26,9 @@ nav a{
 
 nav a:hover{
     background: rgba(255, 255, 255, .1)
+}
+
+nav a.active{
+    background: rgba(255, 255, 255, .1);
+    color: whitesmoke;
 }
