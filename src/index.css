@@ -2,11 +2,11 @@
 /* =================== GLOBAL VARIABLES =================== */
 :root {
   /* background color */
-  --bg-color: #1f1f38;
+  --bg-color: #030303;
   /* background color for card elements */
   --bg-color-variant: #2c2c6c;
   /* main theme color */
-  --color-primary: #4db5ff;
+  --color-primary: #ff5050;
   --color-primary-variant: rgba(77,181,255,0.4) ;
   --color-white: #fff;
   --color-light: rgba(255,255,255,0.6);
@@ -14,7 +14,7 @@
   
   /* gradient color */
   --bg-color-gradient:linear-gradient(225deg, #635883 0, #4a4474 25%, #1f1f38 50%, #000000 75%, #000000 100%);
-  --bg-color-gradient-nav:linear-gradient(225deg, #7a69af57 0, #2c2844b9 25%, #1f1f38 50%, #0000002f 75%, #00000052 100%);
+  --bg-color-gradient-nav:linear-gradient(225deg, #af696957 0, #2c2844b9 25%, #1f1f38 50%, #0000002f 75%, #00000052 100%);
 
 
 
