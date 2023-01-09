@@ -22,21 +22,21 @@ const About = () => {
             <a className="about_link" href="#experience">
               <article className="about__card">
                 <RiMedalLine className="about_card_icon" />
-                <h5>Experience</h5>
+                <h3>Experience</h3>
                 <small>2+ Years Working</small>
               </article>
             </a>
             <a className="about_link" href="#testimonials">
               <article className="about__card">
                 <BsPeople className="about_card_icon" />
-                <h5>Clients</h5>
+                <h3>Clients</h3>
                 <small>50+ Worldwide</small>
               </article>
             </a>
             <a className="about_link" href="#portfolio">
               <article className="about__card">
                 <VscFolderLibrary className="about_card_icon" />
-                <h5>Projects</h5>
+                <h3>Projects</h3>
                 <small>20+ Completed</small>
               </article>
             </a>
@@ -50,7 +50,7 @@ const About = () => {
               I'm always eager to push the boundaries of what's possible.about
             </p>
           </div>
-          <Talk />
+          <Talk/>
         </div>
       </div>
     </section>

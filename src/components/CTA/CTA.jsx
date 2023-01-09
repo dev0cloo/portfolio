@@ -11,7 +11,7 @@ const CTA = () => {
 
 export const Talk = () => {
   return (
-    <div >
+    <div className='talk' >
        <a href='#contact' className='btn-primary btn'>Let's Talk</a>
     </div>
     
