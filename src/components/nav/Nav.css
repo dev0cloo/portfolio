@@ -1,4 +1,4 @@
-nav{
+.mobile__nav{
     background: var(--bg-color-gradient-nav);
     width:max-content;
     padding: 0.7rem 1.7rem;
@@ -10,13 +10,14 @@ nav{
     border-radius: 3rem;
     backdrop-filter: opacity(0);
     display: flex;
-    gap: 1.8rem;
+    gap: 0.8rem;
 }
 
 
 
-nav a{
+.mobile__nav a{
     background: transparent;
+    flex:1;
     padding: 0.9rem;
     display: flex;
     color: var(--color-light);
@@ -24,11 +25,42 @@ nav a{
     font-size: 1.1rem;
 }
 
-nav a:hover{
+.mobile__nav a:hover{
     background: rgba(255, 255, 255, .1)
 }
 
-nav a.active{
+.mobile__nav a.active{
     background: rgba(255, 255, 255, .1);
     color: whitesmoke;
 }
+
+/* ************* LARGE DEVICES **************** */
+@media screen and (min-width:1024px){
+    .mobile__nav{
+      /* display: none; */
+    }
+  }
+
+  /* ************* MEDIUM DEVICES **************** */
+@media screen and (max-width:1024px){
+    .desktop__nav{
+      display: none;
+    }
+    /* .mobile__nav{
+        scale: 80%;
+        gap:0.5rem;
+        
+    } */
+  }
+
+   /* ************* SMALL DEVICES **************** */
+@media screen and (max-width:600px){
+    .desktop__nav{
+      display: none;
+    }
+    .mobile__nav{
+        font-size: 0.8rem;
+        gap:0.4rem;
+       
+    }
+  }

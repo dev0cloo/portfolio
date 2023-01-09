@@ -3,7 +3,7 @@ import './CTA.css'
 
 const CTA = () => {
   return (
-    <div>
+    <div className='work'>
         <a href='#portfolio' className='btn'>My works</a>
     </div>
   )
