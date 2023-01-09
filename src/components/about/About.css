@@ -1,11 +1,39 @@
-#about > h2{
-    color: var(--color-primary);
-}
-
 .about__container {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 35% 50%;
+  gap: 15%;
   height: 100%;
   position: relative;
+}
+
+#about > h2 {
+  color: var(--color-primary);
+}
+
+.about_me {
+  width: 100%;
+  /* ensures the height is the same as the width */
+  aspect-ratio: 1/1;
+  border-radius: 2rem;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    var(--color-primary),
+    transparent
+  );
+}
+
+.about_me_image {
+  border-radius: 2rem;
+  overflow: hidden;
+  transform: rotate(10deg);
+  transition: var(--transition);
+}
+
+.about_me_image:hover{
+    transform: rotate(0deg);
 }
 
 .about_container_main {
@@ -22,7 +50,7 @@
   align-items: center;
 }
 
-.card {
+.about__cards {
   display: flex;
   gap: 2rem;
   flex-direction: row;
@@ -37,10 +65,10 @@
   height: 13rem;
 }
 
-.about link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
+.about link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
