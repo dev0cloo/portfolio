@@ -10,13 +10,15 @@ const About = () => {
     <section id="about">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
+      {/* main About container */}
       <div className="container about__container">
+        {/* container for the image section of the about */}
         <div className="about_me">
           <div className="about_me_image">
             <img src={ABOUT} alt="me" />
           </div>
         </div>
-
+{/* container for the content section of the about */}
         <div className="about__content">
           <div className="about__cards">
             <a className="about_link" href="#experience">

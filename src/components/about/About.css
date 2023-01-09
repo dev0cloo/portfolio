@@ -88,12 +88,7 @@
   margin: 2rem  0 2.6rem;
 }
 
-/* =============== LARGE DEVICES ==============
-@media screen and (min-width: 1024px){
-  #about{
-    height: 100vh;
-  }
-} */
+
 
 /* ************* MEDIUM DEVICES **************** */
 @media screen and (max-width:1024px){
