@@ -18,6 +18,22 @@ export const Talk = () => {
   )
 }
 
- 
+
+export const Github = () => {
+  return (
+    <div className='github'>
+        <a href='https://github.com' className='btn' target="_blank" rel="noreferrer">Github</a>
+    </div>
+  )
+}
+
+export const Demo = () => {
+  return (
+    <div className='demo'>
+        <a href='https://github.com' className='btn btn-primary' target="_blank" rel="noreferrer">Live Demo</a>
+    </div>
+  )
+}
+
 
 export default CTA
