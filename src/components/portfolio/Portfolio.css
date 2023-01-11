@@ -1,0 +1,30 @@
+.portfolio__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* add styles for the image */
+.portfolio__item-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* add styles for the title and details */
+.portfolio__item-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.portfolio__item-details {
+  font-size: 14px;
+  margin-top: 0.5rem;
+  color: #888;
+}
+/* add styles for the Github and Demo buttons */
+.portfolio__item-cta {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}

@@ -18,7 +18,7 @@ const About = () => {
             <img src={ABOUT} alt="me" />
           </div>
         </div>
-{/* container for the content section of the about */}
+        {/* container for the content section of the about */}
         <div className="about__content">
           <div className="about__cards">
             <a className="about_link" href="#experience">
@@ -45,14 +45,17 @@ const About = () => {
           </div>
           <div>
             <p className="about__me">
-              Hi there! I'm full stack developer with a love for all things tech
-              and a passion for creating innovative web solutions. With a strong
-              foundation in front-end and back-end technologies and experience
-              working with smart contracts on Ethereum and Solidity projects,
-              I'm always eager to push the boundaries of what's possible.
+              Hi there! I am a full stack developer with a passion for utilizing
+              technology to create innovative web solutions. With extensive
+              knowledge and experience in both front-end and back-end
+              development, I am well-versed in various web development
+              frameworks and technologies. Additionally, I am proficient in
+              Ethereum blockchain development and have experience creating and
+              deploying smart contracts using Solidity. My ultimate goal is to
+              continuously push the boundaries of what's possible.
             </p>
           </div>
-          <Talk/>
+          <Talk />
         </div>
       </div>
     </section>
